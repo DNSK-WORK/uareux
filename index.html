@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAREUX - Design for SaaS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            overflow: hidden;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .video-section {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .video-section video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-section {
+            background: #000000;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+        }
+        
+        h1 {
+            font-size: 100px;
+            font-weight: 300;
+            line-height: 1;
+            margin-bottom: 60px;
+            letter-spacing: -1px;
+        }
+        
+        .copy {
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+        
+        .copy.small {
+            font-size: 16px;
+            color: #aaaaaa;
+            margin-bottom: 20px;
+        }
+        
+        .copy strong {
+            color: #ffffff;
+            font-weight: 400;
+        }
+        
+        .cta-section {
+            margin-top: 80px;
+        }
+        
+        .email-link {
+            font-size: 18px;
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid #ffffff;
+            transition: opacity 0.3s;
+            display: inline-block;
+        }
+        
+        .email-link:hover {
+            opacity: 0.6;
+        }
+        
+        .footer-info {
+            font-size: 12px;
+            color: #666666;
+            margin-top: 60px;
+        }
+        
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            
+            .video-section {
+                display: none;
+            }
+            
+            h1 {
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-section">
+            <video autoplay muted loop>
+                <source src="bg-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="text-section">
+            <div class="content">
+                <h1>UAREUX</h1>
+                
+                <p class="copy small">Tanya Donska, London 🇬🇧 <br>Ira Baranova, Berlin 🇩🇪</p>
+                
+                <p class="copy">A new UX agency crafting thoughtful SaaS products for the future. Opening in 2026</p>
+                
+                <p class="copy small">UX Design. UI Systems. Creative Direction. Product Audits. Async. Fast. No bullshit.</p>
+                
+                <div class="cta-section">
+                    <a href="mailto:hello@uareux.com" class="email-link">hello@uareux.com</a>
+                </div>
+            </div>
+            
+            <div class="footer-info">
+                © UAREUX 2026
+            </div>
+        </div>
+    </div>
+</body>
+</html>
